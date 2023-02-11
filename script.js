@@ -80,7 +80,7 @@ function handleRestartGame() {
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
-
+setTimeout( function(){document.querySelector('.show').classList.toggle('hidden');}, 120 );
 const sa = document.querySelectorAll('.hb');
 const pMode =['Single player', 'multi player'];
 let co = 1;
