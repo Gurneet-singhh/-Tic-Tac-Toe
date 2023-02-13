@@ -1,6 +1,6 @@
 body {
     font-family: "Arial", sans-serif;
-    background-color: #222;
+    background-color: #202020;
 }
 
 section {
@@ -50,6 +50,7 @@ header {
     left:8% ;
     right: 8%;
     width: 80%;
+    border:0px;
     
 }
 
