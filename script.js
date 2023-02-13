@@ -79,7 +79,7 @@ function handleRestartGame() {
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
-    document.querySelector('.show').attributes.src = "https://gurneet-singhh.github.io/Tic-Tac-Toe-2/";
+    document.querySelector('iframe').src ="https://gurneet-singhh.github.io/Tic-Tac-Toe-2/";
 }
 setTimeout( function(){document.querySelector('.show').classList.toggle('hidden');}, 240 );
 const pMode =['Single player', 'multi player'];
