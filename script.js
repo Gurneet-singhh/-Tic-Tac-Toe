@@ -79,18 +79,15 @@ function handleRestartGame() {
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+    document.querySelector('.show').attributes.src = "https://gurneet-singhh.github.io/Tic-Tac-Toe-2/";
 }
 setTimeout( function(){document.querySelector('.show').classList.toggle('hidden');}, 240 );
-const sa = document.querySelectorAll('.hb');
 const pMode =['Single player', 'multi player'];
 let co = 1;
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
 document.querySelector('.dd').addEventListener('click', function() {
     document.querySelector('.show').classList.toggle('hidden');
-    for(let i=0;i<2;i++) {
-        sa[i].classList.toggle('hidden');
-    }
     document.querySelector('.as').textContent = pMode[co];
     co = co ===1?0:1;
 });
